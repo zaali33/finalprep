@@ -10,6 +10,20 @@
 			number = Math.ceil(Math.random() * 10);
 			return number;
 		}
+
+		function replay(){
+			first = getRandom();
+			span1Elem = document.getElementById("first_num");
+			span1Elem.innerHTML = first;
+			second = getRandom();
+			span2Elem = document.getElementById("second_num");
+			span2Elem.innerHTML = second;
+			result = document.getElementById("result");
+			result.value = "";
+			display = document.getElementById("output");
+			display.innerHTML = "";
+		}
+
 		function check(){
 			span1Elem = document.getElementById("first_num");
 			value1 = parseInt(span1Elem.innerHTML);
@@ -41,7 +55,7 @@
 		</p>
 		<p>
 			<input type="button" value="Check result" onclick="check();" >
-			<input type="button" value="Play again" >
+			<input type="button" value="Play again" onclick="replay();" >
 		</p>
 	</section>
 </body>
