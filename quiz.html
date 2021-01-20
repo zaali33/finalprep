@@ -10,6 +10,22 @@
 			number = Math.ceil(Math.random() * 10);
 			return number;
 		}
+		function check(){
+			span1Elem = document.getElementById("first_num");
+			value1 = parseInt(span1Elem.innerHTML);
+			span2Elem = document.getElementById("second_num");
+			value2 = parseInt(span2Elem.innerHTML);
+			result = document.getElementById("result");
+			value3 = parseInt(result.value);
+			display = document.getElementById("output");
+			
+			if(value3 == (value1 + value2)){				
+				display.innerHTML = "<img src='images/correct.png' /> Great, you entered the correct result.";
+			}
+			else{
+				display.innerHTML = "<img src='images/wrong.png' /> Sorry, you made a mistake. Try again.";
+			}
+		}
 	</script>
 </head>
 
@@ -24,7 +40,7 @@
 		<p id="output">
 		</p>
 		<p>
-			<input type="button" value="Check result" >
+			<input type="button" value="Check result" onclick="check();" >
 			<input type="button" value="Play again" >
 		</p>
 	</section>
