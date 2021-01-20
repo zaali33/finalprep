@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<noscript>This page requires JavaScript to work properly</noscript>
 	<script type="text/javascript">
+		operations = ["+", "*"];
 		function getRandom() {
 			number = Math.ceil(Math.random() * 10);
 			return number;
@@ -20,8 +21,13 @@
 			span2Elem.innerHTML = second;
 			result = document.getElementById("result");
 			result.value = "";
-			display = document.getElementById("output");
-			display.innerHTML = "";
+			operator = document.getElementById("operator");
+			if (first < second) {
+				operator.innerHTML = operations[0];
+			}else{
+				operator.innerHTML = operations[1];
+			}
+			
 		}
 
 		function check(){
@@ -48,7 +54,7 @@
 		<h1>Kindergarten Quiz</h1>
 		<p>Add the following two numbers and type the result in the box:</p>
 		<p>
-			<span id="first_num">5</span> + <span id="second_num">9</span> = 
+			<span id="first_num">5</span> <span id="operator">+</span> <span id="second_num">9</span> = 
 			<input type="number" name="result" id="result" />
 		</p>
 		<p id="output">
