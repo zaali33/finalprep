@@ -1,0 +1,15 @@
+body{
+	width: 800px;
+	border: 1px solid black;
+	margin: 0px auto;
+	font-family: arial, verdana, sans-serif;
+	font-size: 1.5em;
+}
+section{
+	padding: 20px;
+	background-color: #fffb9b;
+}
+
+input{
+	height: 30px;
+}
