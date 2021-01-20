@@ -21,6 +21,8 @@
 			span2Elem.innerHTML = second;
 			result = document.getElementById("result");
 			result.value = "";
+			display = document.getElementById("output");
+			display.innerHTML = "";
 			operator = document.getElementById("operator");
 			if (first < second) {
 				operator.innerHTML = operations[0];
