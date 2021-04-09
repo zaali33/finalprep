@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<noscript>This page requires JavaScript to work properly</noscript>
 	<script type="text/javascript">
-		operations = ["+", "*"];
+		operations = ["+", "*", '-'];
 		function getRandom() {
 			number = Math.ceil(Math.random() * 10);
 			return number;
@@ -24,7 +24,7 @@
 			display = document.getElementById("output");
 			display.innerHTML = "";
 			operator = document.getElementById("operator");
-			operatorSelector = Math.floor(Math.random() * 2);
+			operatorSelector = Math.floor(Math.random() * 3);
 			operator.innerHTML = operations[operatorSelector];
 			
 		}
@@ -39,7 +39,7 @@
 			display = document.getElementById("output");
 			operator = document.getElementById("operator").innerHTML;
 			
-			if(operator == "+" && value3 == (value1 + value2) || operator == "*" && value3 == (value1 + value2) ){				
+			if(operator == "+" && value3 == (value1 + value2) || operator == "*" && value3 == (value1 + value2) || operator == '-' && value3 == (value1 - value2)){				
 				display.innerHTML = "<img src='images/correct.png' /> Great, you entered the correct result.";
 			}
 			else{
