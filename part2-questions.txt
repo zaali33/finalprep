@@ -1,13 +1,13 @@
 Answer the following, add your answer below each question:
 
 1- Open the file quiz.html in your browser and play with the game to test it. Currently, the game has a bug. Although it correctly validates answers to addition questions, it incorrectly validates answers to multiplication questions, i.e., it gives the wrong feedback. Find the commit that introduced this bug, copy and paste its ID below.
-
+	817d5
 2- Don't fix the bug now, but create another branch named 'subtract' and switch to this branch. Modify the game so that it asks the user to answer subtraction questions in addition to the multiplication and the sum questions implemented before (the operation must be chosen randomly). You have to make at least one commit while you are implementing this functionality, but again, without fixing the bug above. Copy and paste the ID of each commit you made below.
-
+	a432e91791044899b46cc23230c3fc7e2dd4259c
 3- Push the changes you made on this branch to the remote.
 
 4- Switch back to the master branch, fix the bug that you found above in a new commit and paste its ID below.
-
+	a7e7907cef2f475ff771972515821b816676b79b
 5- Merge the subtract branch into the master and resolve any conflicts you get. Then push your changes to the remote.
-
+	
 6- Remember to save this file, add and commit it, then push again.
