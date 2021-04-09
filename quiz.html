@@ -39,7 +39,7 @@
 			display = document.getElementById("output");
 			operator = document.getElementById("operator").innerHTML;
 			
-			if(operator == "+" && value3 == (value1 + value2) || operator == "*" && value3 == (value1 + value2) ){				
+			if(operator == "+" && value3 == (value1 + value2) || operator == "*" && value3 == (value1 * value2) ){				
 				display.innerHTML = "<img src='images/correct.png' /> Great, you entered the correct result.";
 			}
 			else{
